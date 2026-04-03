@@ -1,0 +1,275 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<BaseLayout title={post.data.title} description={post.data.description}>
+  <article class="post">
+    <section class="post-hero" style={`background-image: url('${post.data.image}')`}>
+      <div class="post-hero-content">
+        <h1>{post.data.title}</h1>
+        <p class="tagline">{post.data.description}</p>
+        <div class="post-meta">
+          <span class="date">
+            {post.data.date.toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric'
+            })}
+          </span>
+          <span class="location">📍 {post.data.location}</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="post-content">
+      <Content />
+    </div>
+
+    <footer class="post-footer">
+      <a href="/blog" class="back-link">← Back to all posts</a>
+    </footer>
+  </article>
+</BaseLayout>
+
+<style>
+  .post {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .post-hero {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    margin-bottom: 3rem;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+
+  .post-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(107, 68, 35, 0.6);
+    z-index: 1;
+  }
+
+  .post-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 900px;
+    padding: 0 2rem;
+  }
+
+  .post-hero h1 {
+    color: var(--color-bg);
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    font-size: 3.5rem;
+  }
+
+  .tagline {
+    font-size: 1.3rem;
+    color: var(--color-bg);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    line-height: 1.6;
+  }
+
+  .post-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    color: var(--color-bg);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .date {
+    font-weight: 600;
+  }
+
+  .location {
+    font-weight: 600;
+  }
+
+  .post-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--color-ink);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .post-content :global(h2) {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .post-content :global(h3) {
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+  }
+
+  .post-content :global(p) {
+    margin-bottom: 1.5rem;
+  }
+
+  .post-content :global(ul),
+  .post-content :global(ol) {
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
+  }
+
+  .post-content :global(li) {
+    margin-bottom: 0.5rem;
+  }
+
+  .post-content :global(code) {
+    background-color: var(--color-accent);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0;
+    font-size: 0.9em;
+    border: 1px solid var(--color-secondary);
+  }
+
+  .post-content :global(pre) {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    padding: 1.5rem;
+    border-radius: 0;
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+    border: 3px solid var(--color-border);
+  }
+
+  .post-content :global(pre code) {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--color-bg);
+  }
+
+  .post-content :global(blockquote) {
+    border-left: 6px solid var(--color-secondary);
+    background-color: var(--color-muted);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    border-radius: 0;
+  }
+
+  .post-content :global(img) {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 2rem auto;
+    display: block;
+    border: 3px solid var(--color-border);
+  }
+
+  .post-footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 3px solid var(--color-accent);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .back-link {
+    display: inline-block;
+    color: var(--color-bg);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+
+  .back-link:hover {
+    color: var(--color-secondary);
+  }
+
+  .post-content :global(.stick-stats) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: #d4c4b9;
+    border: 3px solid var(--color-border);
+    border-radius: 0;
+  }
+
+  .post-content :global(.stat-item) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .post-content :global(.stat-label) {
+    font-weight: bold;
+    color: var(--color-primary);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .post-content :global(.stat-value) {
+    font-size: 1.3rem;
+    color: var(--color-ink);
+    font-weight: 600;
+  }
+
+  @media (max-width: 768px) {
+    .post-hero {
+      height: 400px;
+      background-attachment: scroll;
+    }
+
+    .post-hero h1 {
+      font-size: 2rem;
+    }
+
+    .tagline {
+      font-size: 1rem;
+    }
+
+    .post-meta {
+      font-size: 0.9rem;
+    }
+
+    .post-content {
+      padding: 0 1rem;
+      font-size: 1rem;
+    }
+  }
+</style>

@@ -1,0 +1,188 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Targy's Twigs - Home">
+  <section class="hero">
+    <h1>Every Stick Has a Story</h1>
+    <p class="tagline">Collected by Targy the dog on walks and hikes, each twig carries a memory and a bit of adventure</p>
+    <div class="hero-content">
+      <p>
+        Welcome to Targy's Twigs, the ultimate online destination for all things stick-related! This site celebrates the finest collection of sticks ever assembled, curated by none other than Targy, the stick enthusiast, fetch champion, and connoisseur of fine twigs.
+      </p>
+      <a href="/blog" class="cta-button">Explore the Collection</a>
+    </div>
+  </section>
+
+  <section class="featured">
+    <h2>Why Sticks Matter</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>🌲 Collected</h3>
+        <p>Found from the forests and plains across the country, each stick tells a story of Targy's adventures.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🐕 Cherished</h3>
+        <p>These aren't just sticks—they're treasures, each one carefully selected and proudly displayed in Targy's collection.</p>
+      </div>
+      <div class="feature-card">
+        <h3>✨ Celebrated</h3>
+        <p>Join us as we honor the joy, memories, and wagging tails that sticks bring to a dog's life.</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    text-align: center;
+    padding: 8rem 2rem;
+    background-image: url('/Hero.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    margin-bottom: 3rem;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(27, 58, 46, 0.6);
+    z-index: 1;
+  }
+
+  .hero h1 {
+    color: var(--color-bg);
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    font-size: 4rem;
+  }
+
+  .tagline {
+    font-size: 1.5rem;
+    color: var(--color-bg);
+    font-style: italic;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+    color: var(--color-bg);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    display: none;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background-color: var(--color-secondary);
+    color: var(--color-bg);
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 0;
+    border: 3px solid var(--color-border);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    z-index: 2;
+  }
+
+  .cta-button:hover {
+    background-color: var(--color-highlight);
+    color: var(--color-bg);
+  }
+
+  .featured {
+    margin-top: 4rem;
+  }
+
+  .featured h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .feature-card {
+    background-color: var(--color-accent);
+    padding: 2rem;
+    border-radius: 0;
+    border: 3px solid var(--color-border);
+    transition: transform 0.3s ease;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .feature-card h3 {
+    color: var(--color-bg);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .feature-card p {
+    color: var(--color-bg);
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      height: 350px;
+      padding: 0 1rem;
+      background-attachment: scroll;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .tagline {
+      font-size: 1.1rem;
+    }
+
+    .cta-button {
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+    }
+
+    .feature-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

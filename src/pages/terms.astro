@@ -1,0 +1,216 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Terms & Conditions - Targy's Twigs" description="Terms and conditions for Targy's Twigs">
+  <section class="page-hero" style="background-image: url('/terms.png')">
+    <div class="hero-content">
+      <h1>Terms & Conditions</h1>
+      <p class="tagline">The rules of the stick realm</p>
+    </div>
+  </section>
+
+  <article class="terms-content">
+    <section class="term">
+      <h2>1. Stick Ownership</h2>
+      <p>
+        All sticks featured on this site are considered property of Targy, except in cases where they are secretly claimed by other neighborhood dogs, in which case, a high-pitched bark and an epic chase may be required to settle ownership disputes.
+      </p>
+    </section>
+
+    <section class="term">
+      <h2>2. Stick Handling</h2>
+      <p>
+        While browsing our website, please refrain from attempting to claim any sticks for yourself. These sticks are carefully cataloged and have earned their place in Targy's prestigious collection. Unauthorized stick theft will result in an immediate bark alert from Targy and possible licking punishment.
+      </p>
+    </section>
+
+    <section class="term">
+      <h2>3. Stick Photography</h2>
+      <p>
+        Photographs of Targy's sticks are for visual enjoyment only. Reproduction of stick images without permission may result in a playful growl or the sharing of embarrassing pictures of you (with no sticks).
+      </p>
+    </section>
+
+    <section class="term">
+      <h2>4. No Stick Wars</h2>
+      <p>
+        We understand the competitive nature of fetch, but please, no stick wars on this website. There will be no barking, growling, or nipping at fellow site visitors. This is a peaceful stick zone, and Targy expects only friendly tail-wagging behavior.
+      </p>
+    </section>
+
+    <section class="term">
+      <h2>5. Privacy Policy (of the Tail-Wagging Kind)</h2>
+      <p>
+        We take your privacy as seriously as Targy takes his stick collection. However, by using this site, you acknowledge that there may be an excessive amount of Targy's adorable face in photos, videos, and possibly your dreams. No personal data will be retrieved through tail wags, but feel free to submit your contact info if you'd like a Targy-inspired bark reminder.
+      </p>
+    </section>
+
+    <section class="term">
+      <h2>6. Stick-Related Content</h2>
+      <p>
+        All content, including videos of Targy running after sticks and possibly rolling in mud afterward, is meant for your enjoyment and not for serious educational purposes. If you are looking for an actual guide on sticks, fetch, or dog toys, you may want to look elsewhere.
+      </p>
+    </section>
+
+    <section class="term">
+      <h2>7. Liability Disclaimer</h2>
+      <p>
+        By viewing this site, you understand that Targy cannot be held responsible for any unprovoked urges to fetch a stick, the sudden desire to run outside, or an increase in stick-related purchases. This is your warning: Targy's stick collection may lead to excessive outdoor activities or an unreasonable obsession with fetching sticks.
+      </p>
+    </section>
+
+    <section class="term">
+      <h2>8. Stick Donation (Optional)</h2>
+      <p>
+        Do you have a stick you believe could make a worthy addition to Targy's collection? While Targy generally prefers sticks found in the wild or freshly chewed, feel free to send your offerings. Targy accepts no responsibility for the stick's condition or its ability to withstand chewing for long periods of time.
+      </p>
+    </section>
+
+    <section class="term">
+      <h2>9. Terms May Change (Just Like a Stick in a River)</h2>
+      <p>
+        Targy reserves the right to change these terms at any time, without notice. If these terms change, Targy will most likely wag his tail in approval. Should you disagree with any of the new terms, please redirect your complaint to the nearest park and throw a stick in Targy's direction for his consideration.
+      </p>
+    </section>
+
+    <div class="footer-note">
+      <p><strong>By visiting Targy Twigs, you acknowledge that you have read and understood these terms and agree to be bound by them.</strong></p>
+      <p>Now go outside and throw a stick! 🐕🌲</p>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    margin-bottom: 3rem;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+
+  .page-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(107, 68, 35, 0.6);
+    z-index: 1;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 900px;
+    padding: 0 2rem;
+  }
+
+  .page-hero h1 {
+    color: var(--color-bg);
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    font-size: 3.5rem;
+  }
+
+  .page-hero .tagline {
+    font-size: 1.3rem;
+    color: var(--color-bg);
+    font-style: italic;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .terms-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .terms-content h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: #d4c4b9;
+    border-left: 6px solid var(--color-secondary);
+    border-radius: 0;
+    color: var(--color-ink);
+  }
+
+  .term {
+    margin-bottom: 2.5rem;
+  }
+
+  .term h2 {
+    color: var(--color-secondary);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .term p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--color-ink);
+    margin-bottom: 1rem;
+  }
+
+  .footer-note {
+    margin-top: 4rem;
+    padding: 2rem;
+    background-color: #d4c4b9;
+    border: 3px solid var(--color-border);
+    text-align: center;
+  }
+
+  .footer-note p {
+    margin-bottom: 0.5rem;
+    color: var(--color-ink);
+  }
+
+  @media (max-width: 768px) {
+    .terms-content {
+      padding: 0 1rem;
+    }
+
+    .page-hero {
+      height: 250px;
+      background-attachment: scroll;
+    }
+
+    .page-hero h1 {
+      font-size: 2rem;
+    }
+
+    .page-hero .tagline {
+      font-size: 1rem;
+    }
+
+    .intro {
+      font-size: 1rem;
+      padding: 1.5rem;
+    }
+
+    .term h2 {
+      font-size: 1.2rem;
+    }
+
+    .term p {
+      font-size: 1rem;
+    }
+  }
+</style>

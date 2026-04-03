@@ -1,0 +1,175 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="About - Targy's Twigs" description="Learn more about Targy's stick collection">
+  <section class="page-hero" style="background-image: url('/about.png')">
+    <div class="hero-content">
+      <h1>About Targy's Twigs</h1>
+      <p class="tagline">Meet the dog behind the collection</p>
+    </div>
+  </section>
+
+  <article class="about-content">
+    <section class="mission">
+      <h2>Who Is Targy?</h2>
+      <p>
+        Targy is a four-legged adventurer with a passion for collecting sticks in all shapes and sizes. Born in Libby, Montana, Targy started his journey in the wilds of the Big Sky country, where the sticks are as abundant as the beautiful mountain views. From there, he moved to Sandpoint, ID, where the serene lakes and forests provided the perfect backdrop for his stick-finding escapades.
+      </p>
+      <p>
+        Targy also spent some time in the Twin City metro area where he learned the art of finding sticks in an urban landscape. Now he resides in the Black Hills of South Dakota and continues his passion for stick hunting, collecting, and eating. Whether he's fetching them from the forests of Sandpoint or finding hidden treasures among the pines of the Black Hills, Targy's love for sticks has only grown stronger with every step of his journey.
+      </p>
+    </section>
+
+    <section class="design">
+      <h2>Our Mission</h2>
+      <p>
+        Our mission is simple: To celebrate the beauty and importance of sticks in a dog's life. Targy has spent years perfecting his collection, and we want to share that joy with all the dog lovers and stick enthusiasts out there. Whether you're here to appreciate Targy's fine twigs, get inspired to start your own collection, or just enjoy the quirky charm of a dog who takes sticks way too seriously, you've come to the right place.
+      </p>
+      <p>
+        We invite you to explore our collection, laugh at the antics of a dog whose life revolves around fetching and chewing, and perhaps even consider donating your own favorite stick to Targy's ever-expanding hoard. Whether you are here to browse, learn, or contribute, Targy Twigs is all about bringing joy, laughter, and wagging tails.
+      </p>
+      <p>
+        Thank you for being a part of this stick-filled journey. Remember, life's better with a stick in your mouth (or at least in your heart)!
+      </p>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    margin-bottom: 3rem;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+
+  .page-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(107, 68, 35, 0.6);
+    z-index: 1;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 900px;
+    padding: 0 2rem;
+  }
+
+  .page-hero h1 {
+    color: var(--color-bg);
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    font-size: 3.5rem;
+  }
+
+  .page-hero .tagline {
+    font-size: 1.3rem;
+    color: var(--color-bg);
+    font-style: italic;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .about-content h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .about-content section {
+    margin-bottom: 3rem;
+  }
+
+  .about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: var(--color-ink);
+  }
+
+  .intro {
+    background-color: #d4c4b9;
+    padding: 2rem;
+    border-left: 6px solid var(--color-secondary);
+    border-radius: 0;
+  }
+
+  .color-palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .color-swatch {
+    padding: 2rem 1rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0;
+    color: var(--color-bg);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid var(--color-border);
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .color-swatch.primary {
+    background-color: var(--color-primary);
+  }
+
+  .color-swatch.secondary {
+    background-color: var(--color-secondary);
+  }
+
+  .color-swatch.accent {
+    background-color: var(--color-accent);
+    color: var(--color-border);
+  }
+
+  .color-swatch.muted {
+    background-color: var(--color-muted);
+  }
+
+  @media (max-width: 768px) {
+    .page-hero {
+      height: 250px;
+      background-attachment: scroll;
+    }
+
+    .page-hero h1 {
+      font-size: 2rem;
+    }
+
+    .page-hero .tagline {
+      font-size: 1rem;
+    }
+
+    .about-content p {
+      font-size: 1rem;
+    }
+
+    .color-palette {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

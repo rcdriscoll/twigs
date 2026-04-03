@@ -1,0 +1,27 @@
+{
+  "name": "twigs",
+  "version": "1.0.0",
+  "description": "Targy Twigs V2 yippeeee",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcdriscoll/twigs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/rcdriscoll/twigs/issues"
+  },
+  "homepage": "https://github.com/rcdriscoll/twigs#readme",
+  "dependencies": {
+    "@astrojs/markdown-remark": "^7.1.0",
+    "astro": "^6.1.3"
+  }
+}
