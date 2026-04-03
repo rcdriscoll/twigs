@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="About - Targy's Twigs" description="Learn more about Targy's stick collection">
-  <section class="page-hero" style="background-image: url('/About.png')">
+  <section class="page-hero" style="background-image: url('/twigs/About.png')">
     <div class="hero-content">
       <h1>About Targy's Twigs</h1>
       <p class="tagline">Meet the dog behind the collection</p>
@@ -16,6 +16,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <p>
         Targy is a four-legged adventurer with a passion for collecting sticks in all shapes and sizes. Born in Libby, Montana, Targy started his journey in the wilds of the Big Sky country, where the sticks are as abundant as the beautiful mountain views. From there, he moved to Sandpoint, ID, where the serene lakes and forests provided the perfect backdrop for his stick-finding escapades.
       </p>
+      <img src="/twigs/Targy.jpeg" alt="Targy" class="targy-image">
       <p>
         Targy also spent some time in the Twin City metro area where he learned the art of finding sticks in an urban landscape. Now he resides in the Black Hills of South Dakota and continues his passion for stick hunting, collecting, and eating. Whether he's fetching them from the forests of Sandpoint or finding hidden treasures among the pines of the Black Hills, Targy's love for sticks has only grown stronger with every step of his journey.
       </p>
@@ -107,6 +108,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     color: var(--color-ink);
   }
 
+  .targy-image {
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem auto;
+    display: block;
+  }
+
   .intro {
     background-color: #d4c4b9;
     padding: 2rem;
@@ -166,6 +175,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
     .about-content p {
       font-size: 1rem;
+    }
+
+    .targy-image {
+      max-width: 200px;
     }
 
     .color-palette {

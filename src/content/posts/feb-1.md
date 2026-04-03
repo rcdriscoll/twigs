@@ -3,7 +3,7 @@ title: "Cottonwood Beauty from February"
 description: "A perfectly sized prize from the snow-dusted ground—fetch fuel and zoomy inspiration"
 date: 2026-02-01
 author: "Targy"
-image: "/images/feb-1-hero.jpeg"
+image: "/twigs/images/feb-1-hero.jpeg"
 location: "Black Hills, South Dakota"
 length: "2 feet"
 diameter: "2 inches"
@@ -41,7 +41,7 @@ February's first day brought fresh snow and the perfect find—a 2-foot cottonwo
 
 The cold air, pristine snow, and this magnificent cottonwood specimen created the perfect conditions. The stick stood up to every toss, every chase, every retrieve.
 
-![Targy playing with cottonwood stick](/images/feb-1-fetch.jpeg)
+![Targy playing with cottonwood stick](/twigs/images/feb-1-fetch.jpeg)
 
 Targy's human threw it again and again—Targy was unstoppable. This particular find will hold a special place in Targy's collection, a reminder of that snowy February day when he discovered pure happiness in one perfect piece of wood.
 

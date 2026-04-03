@@ -3,7 +3,7 @@ title: "Chew Them Like You Stole Them"
 description: "A sneak mission to the neighbor's yard yields a perfectly fresh hickory prize"
 date: 2026-03-21
 author: "Targy"
-image: "/images/march-21-hero.jpeg"
+image: "/twigs/images/march-21-hero.jpeg"
 location: "Neighbor's Yard, Black Hills"
 length: "8 inches"
 diameter: "2 inches"
@@ -45,7 +45,7 @@ Every collector knows the rush of the heist. On March 21st, Targy spotted it—a
 
 At just 8 inches long with a 2-inch diameter, it was compact but substantial—perfect for quick, efficient work. There's something special about hickory. It's dense, full of character, and built for serious chewing. This particular specimen had that incredible fresh-from-the-tree energy.
 
-![Targy chewing](/images/march-21-hero.jpeg)
+![Targy chewing](/twigs/images/march-21-hero.jpeg)
 
 The kind of stick you chew like you stole it—because he did. The 2-inch diameter was perfect: enough substance to keep engaged, but manageable enough for rapid progression. Mission accomplished. Targy returned with his prize, the fresh hickory stick now part of his collection. The neighbor never knew what he lost. Sometimes the best sticks come from the boldest moves.
 

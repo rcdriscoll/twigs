@@ -8,7 +8,7 @@ const posts = (await getCollection('posts')).sort(
 ---
 
 <BaseLayout title="Blog Posts - Targy's Twigs" description="Read Targy's stick adventure stories">
-  <section class="page-hero" style="background-image: url('/Blogs.png')">
+  <section class="page-hero" style="background-image: url('/twigs/Blogs.png')">
     <div class="hero-content">
       <h1>Stick Stories</h1>
       <p class="tagline">Tales of adventure, discovery, and the finest twigs from around the world</p>
@@ -22,7 +22,7 @@ const posts = (await getCollection('posts')).sort(
         <div class="post-image">
           <img src={post.data.image} alt={post.data.title} />
         </div>
-        <a href={`/blog/${post.id}`} class="post-link">
+        <a href={`/twigs/blog/${post.id}`} class="post-link">
           <h2>{post.data.title}</h2>
           <p class="post-meta">
             <span class="date">{post.data.date.toLocaleDateString('en-US', {

@@ -3,7 +3,7 @@ title: "2x4 Lumber"
 description: "A milled pine 2x4 meant for a sauna—the sleeper stick that's a dream to chew"
 date: 2026-03-22
 author: "Targy"
-image: "/images/march-22-hero.jpeg"
+image: "/twigs/images/march-22-hero.jpeg"
 location: "Black Hills, South Dakota"
 length: "2 feet"
 diameter: "2x4 inches"
@@ -45,7 +45,7 @@ March brought an unexpected treasure—a cut pine 2x4 destined for a sauna build
 
 The wood was smooth, uniform, and absolutely perfect. At 2x4 inches, it offered substantial mass and serious chewing potential. This wasn't a branch that fell from a tree—this was real, processed lumber with a completely different character than Targy's usual finds.
 
-![Targy chewing](/images/march-22-chew.jpeg)
+![Targy chewing](/twigs/images/march-22-chew.jpeg)
 
 The pine came with a satisfying texture and slight sweetness. No rough bark, just clean, manageable wood that felt premium. High quality from Neiman Enterprises. The original purpose was noble, but in Targy's wisdom, he recognized it for what it truly was: an exceptional stick. The intended builders eventually shrugged and let him have it. After all, what's a sauna compared to the pure joy of a perfectly-sized pine beam? It's become one of his most prized possessions—a contemplative indoor chew companion. Sometimes the best sticks come from the most unexpected places.
 
