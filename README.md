@@ -1,6 +1,6 @@
-# Trailside Blog
+# Targy Twigs Blog
 
-A blog site built with Astro and styled after 1970s national park posters.
+A blog site built with Astro for targy twigs
 
 ## Features
 
