@@ -1,6 +1,6 @@
 ---
 title: "2x4 Lumber"
-description: "A milled pine 2x4 meant for a sauna—the sleeper stick that's a dream to chew"
+description: "A milled pine 2x4 meant for a sauna the sleeper stick that's a dream to chew"
 date: 2026-03-22
 author: "Targy"
 image: "/twigs/images/march-22-hero.jpeg"
@@ -41,7 +41,7 @@ scientific_name: "Pinus ponderosa"
 
 ## The Story
 
-March brought an unexpected treasure—a cut pine 2x4 destined for a sauna build by Neiman Enterprises. But before those perfectly milled boards could serve their intended purpose, one found its way into Targy's collection. This sleeper of a stick is unlike anything he's encountered before.
+March brought an unexpected treasure. A cut pine 2x4 destined for a sauna build by Neiman Enterprises. But before those perfectly milled boards could serve their intended purpose, one found its way into Targy's collection. This sleeper of a stick is unlike anything he's encountered before.
 
 The wood was smooth, uniform, and absolutely perfect. At 2x4 inches, it offered substantial mass and serious chewing potential. This wasn't a branch that fell from a tree—this was real, processed lumber with a completely different character than Targy's usual finds.
 
